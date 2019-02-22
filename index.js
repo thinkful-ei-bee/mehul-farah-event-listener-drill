@@ -1,7 +1,15 @@
-const big_img = $('.hero');
+'use strict';
+/* global $ */
+function changeImage(){
+  $('.thumbnail').on('click', function(event) {
 
-$('.thumbnail').on('click', 'a', function(event) {
+    
+    $('.hero').find('img').attr('src',$(this).find('img').attr('src'));
 
-  big_image.  
+    // $('.hero').children('src',$(this).find('img').attr('src'));
+   
+  });
+}
 
-});
+
+$(changeImage);
